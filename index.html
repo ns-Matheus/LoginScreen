@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="img/sologo.png" type="image/x-icon">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Tela Login</title>
+</head>
+
+<body>
+	<div id="app">
+		<div class="main_login">
+			<div class="left_login">
+				<h1>Faça Login & entre para o nosso time!</h1>
+				<img src="img/cat-astronaut-animate.svg" class="left_login_img" alt="Gato Galático">
+			</div>
+			<div class="right_login">
+				<div class="card_login">
+					<h1>LOGIN</h1>
+					<div class="textfield">
+						<label for="usuario">Usuário</label>
+						<input v-model="name" type="text" name="usuario" placeholder="Insira seu Nome">
+					</div>
+					<div class="textfield">
+						<label for="senha">Senha</label>
+						<input v-model="password" type="password" name="senha" placeholder="Insira sua senha">
+					</div>
+					<button v-on:click="counter += 1, greet" @click="persist" class="btn_login">Login</button>
+					<p>Quantas vezes realizaram Login: {{ counter }}</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Vue.js -->
+	<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+	<!-- JS personalizado -->
+	<script src="js/vue.js"></script>
+
+</body>
+
+</html>
